@@ -4,3 +4,4 @@ export default async function buscarDocente(
      req: Request,
     res: Response
 ): Promise<void> {}
+

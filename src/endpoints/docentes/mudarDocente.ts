@@ -1,5 +1,8 @@
 import { Request, Response } from "express";
 
-export const mudarDocente = async (req: Request, res: Response) => {
+import { connection } from "../../Data/connection";
+export default async function mudarDocente(
+     req: Request,
+    res: Response
+): Promise<void> {}
 
-}

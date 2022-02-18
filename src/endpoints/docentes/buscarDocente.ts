@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { connection } from "../../Data/connection";
-import { docente } from "../../Types/TipoDocente";
+import { docente } from "../../types/TipoDocente";
+
 export default async function buscarDocente(
     req: Request,
     res: Response

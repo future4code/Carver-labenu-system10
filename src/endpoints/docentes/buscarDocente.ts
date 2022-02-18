@@ -1,7 +1,19 @@
 import { Request, Response } from "express";
 import { connection } from "../../Data/connection";
+import { docente } from "../../Types/TipoDocente";
 export default async function buscarDocente(
-     req: Request,
+    req: Request,
     res: Response
-): Promise<void> {}
+): Promise<void> {
+    try {
+        const name = req.query
+        const docentes: docente[] = await connection("labesystem_docentes")
+
+        res.send(docentes)
+    }
+    catch (error) {
+        res.status(500).send("Infelizmente, ocorreu um erro ao processar sua solicitação")
+
+    }
+}
 

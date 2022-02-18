@@ -1,0 +1,11 @@
+POST http://localhost:3003/docentes
+Content-Type: application/json
+
+{
+    "nome": "Luluzinha", 
+    "email": "lulu@zinha.com", 
+    "data_nasc": "24/12/1987", 
+    "turma_id": "0123"
+}
+
+###

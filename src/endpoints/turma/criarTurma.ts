@@ -4,7 +4,7 @@ import { TipoTurma } from "../../types/TipoTurma";
 
 export const criarTurma = async (req: Request, res: Response) => {
   try {
-    const {nome, docentes, estudantes, modulo} =req.body;
+    const {nome, docentes, estudantes, modulo} = req.body;
 
     if (!nome || !docentes || !estudantes || !modulo){
       throw new Error("Campos necessários não foram informados");

@@ -11,11 +11,14 @@ export const dataValida = (data: string) => {
 
         if (!dia || !mes || !ano) throw new Error()
 
+        
         dataFormatada = new Date(`${ano}/${mes}/${dia}`)
-
+        
         if (!dataFormatada) throw new Error()
         if (!(dataFormatada instanceof Date)) throw new Error()
         if (isNaN(dataFormatada.getTime())) throw new Error()
+
+        return dataFormatada
 
     } catch (error) {
         return null

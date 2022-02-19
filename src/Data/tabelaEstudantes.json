@@ -1,0 +1,65 @@
+[
+	{
+		"id" : "1645284140080",
+		"nome" : "Joana",
+		"email" : "joana@gmail.com",
+		"data_nasc" : "1995-08-12",
+		"turma_id" : "1"
+	},
+	{
+		"id" : "1645284342186",
+		"nome" : "Ana",
+		"email" : "ana@gmail.com",
+		"data_nasc" : "1995-02-10",
+		"turma_id" : "1"
+	},
+	{
+		"id" : "1645284710577",
+		"nome" : "Gabi",
+		"email" : "gabi@gmail.com",
+		"data_nasc" : "1995-02-12",
+		"turma_id" : "2"
+	},
+	{
+		"id" : "1645285740697",
+		"nome" : "joão",
+		"email" : "joao@gmail.com",
+		"data_nasc" : "1994-03-16",
+		"turma_id" : "2"
+	},
+	{
+		"id" : "1645285965617",
+		"nome" : "gabriel",
+		"email" : "gaga@gmail.com",
+		"data_nasc" : "1994-03-16",
+		"turma_id" : "2"
+	},
+	{
+		"id" : "1645286023776",
+		"nome" : "gabriel",
+		"email" : "gaba@gmail.com",
+		"data_nasc" : "1994-03-16",
+		"turma_id" : "2"
+	},
+	{
+		"id" : "1645286072325",
+		"nome" : "gabriel",
+		"email" : "gab3a@gmail.com",
+		"data_nasc" : "1994-03-16",
+		"turma_id" : "2"
+	},
+	{
+		"id" : "1645286129438",
+		"nome" : "gabriel silva",
+		"email" : "gab4a@gmail.com",
+		"data_nasc" : "1994-03-16",
+		"turma_id" : "2"
+	},
+	{
+		"id" : "1645286375659",
+		"nome" : "babi",
+		"email" : "babi@gmail.com",
+		"data_nasc" : "1994-03-16",
+		"turma_id" : "1"
+	}
+]

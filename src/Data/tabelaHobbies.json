@@ -1,0 +1,26 @@
+[
+	{
+		"id" : "2",
+		"nome" : "escutar músicas"
+	},
+	{
+		"id" : "1",
+		"nome" : "estudar"
+	},
+	{
+		"id" : "4",
+		"nome" : "fazer exercícios"
+	},
+	{
+		"id" : "5",
+		"nome" : "jogar jogos de tabuleiro"
+	},
+	{
+		"id" : "3",
+		"nome" : "ler livros de romance"
+	},
+	{
+		"id" : "6",
+		"nome" : "viajar para lugares exóticos"
+	}
+]

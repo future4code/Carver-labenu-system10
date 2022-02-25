@@ -1,0 +1,52 @@
+-- Tabela de Turmas
+CREATE TABLE `labesystem_turmaslabesystem_turmas` (
+    id VARCHAR(255) PRIMARY KEY,
+    nome VARCHAR(255) UNIQUE NOT NULL,
+    modulo VARCHAR(255) DEFAULT 0
+);
+
+-- Tabela de Estudantes
+CREATE TABLE `labesystem_estudantes` (
+    id VARCHAR(255) PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    data_nasc DATE NOT NULL,
+    turma_id VARCHAR(255) NOT NULL,
+    FOREIGN KEY (turma_id) REFERENCES `labesystem_turmas`(id)
+);
+-- Tabela de Hobbies
+CREATE TABLE  `labesystem_hobbies` (
+    id VARCHAR(255) PRIMARY KEY,
+    nome VARCHAR(255) UNIQUE NOT NULL
+);
+-- Tabela de Hobbies de Estudantes
+CREATE TABLE `labesystem_estudantes_hobbies` (
+    id VARCHAR(255) PRIMARY KEY,
+    estudante_id VARCHAR(255) NOT NULL,
+    hobbie_id VARCHAR(255) NOT NULL,
+    FOREIGN KEY (estudante_id) REFERENCES `labesystem_estudantes`(id),
+    FOREIGN KEY (hobbie_id) REFERENCES `labesystem_hobbies`(id)
+);
+
+-- Tabela de Docentes
+CREATE TABLE `labesystem_docentes` (
+    id VARCHAR(255) PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    data_nasc DATE NOT NULL,
+    turma_id VARCHAR(255) NOT NULL,
+    FOREIGN KEY (turma_id) REFERENCES `labesystem_turmas`(id)
+);
+-- Tabela de Especialidades
+CREATE TABLE `labesystem_especialidades` (
+    id VARCHAR(255) PRIMARY KEY,
+    nome VARCHAR(255) UNIQUE NOT NULL
+);
+-- Tabela de Especialidades de Docentes
+CREATE TABLE `labesystem_docentes_especialidades` (
+    id VARCHAR(255) PRIMARY KEY,
+    docente_id VARCHAR(255) NOT NULL,
+    especialidade_id VARCHAR(255) NOT NULL,
+    FOREIGN KEY (docente_id) REFERENCES `labesystem_docentes`(id),
+    FOREIGN KEY (especialidade_id) REFERENCES `labesystem_especialidades`(id)
+);

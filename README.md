@@ -31,3 +31,9 @@ As funcionalidades básicas são:
 → Adicionar docente na turma;
 
 → Pegar a idade de algum estudante a partir do id
+# Documentação do postman 
+ [API](https://documenter.getpostman.com/view/18390857/UVkmQHAu)
+ ### Alunas participantes 
+- Eliana Cristina de deus Santos 
+- Luiza Gil Almeida Cioffi
+- Ruana Piber da Rosa 
